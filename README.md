@@ -28,4 +28,4 @@ The work of Gonzalo Seco-Granados is partly funded by the Spanish Ministry of Sc
 ## If You Use This Code
 If you use or extend this code, please cite our work.
 
-B. Peng, Y. Xie, G. Seco-Granados, H. Wymeersch and E. Jorswieck, "Communication Scheduling by Deep Reinforcement Learning for Remote Traffic State Estimation with Bayesian Inference," in IEEE Transactions on Vehicular Technology (accepted).
+B. Peng, Y. Xie, G. Seco-Granados, H. Wymeersch and E. Jorswieck, "Communication Scheduling by Deep Reinforcement Learning for Remote Traffic State Estimation with Bayesian Inference," in IEEE Transactions on Vehicular Technology, vol. 71, no. 4, April 2022.
