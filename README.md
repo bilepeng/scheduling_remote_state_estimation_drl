@@ -71,20 +71,24 @@ The orange band shows how uncertain the tracking estimate currently is
 (wider = less confident); the red bars mark how much resource the agent
 chose to spend at that point along the track.
 
-**Case 1 — driving straight.**
-The road ahead is unambiguous, so the agent quickly learns it can get away
-with spending little. The red bars stay short and infrequent, and the
+**Case 1 — outside the intersection.**
+The road ahead is unambiguous and the prediction of vehicle state
+based on its previous estimates is quite accurate.
+The agent quickly learns it can reduce allocated resource without
+degrading estimation accuracy significantly. 
+The red bars stay short, and the
 uncertainty band stays narrow throughout.
 
-![Straight-driving case: low, sparse resource allocation](images/straight.png)
-
-**Case 2 — approaching and passing through an intersection.**
-Before the intersection, the vehicle could still go straight or turn — the
-agent has no way to be sure. In response, it sharply raises its resource
+**Case 2 — approaching the intersection.**
+Before the intersection, the vehicle could go straight or turn — the
+agent has no way to be sure and the prediction accuracy drops significantly. 
+In response, it sharply raises its resource
 spend exactly during this ambiguous window, keeping the tracking accurate
-while the outcome is still unresolved. Once the turn is complete and the
-vehicle's path is predictable again, the agent relaxes and lowers its
-spend back down.
+while the outcome is still unresolved. Once the
+vehicle's path is predictable again (whether it goes straight or turns), 
+the agent relaxes and lowers its spend back down.
+
+![Straight-driving case: low, sparse resource allocation](images/straight.png)
 
 ![Turning case: resource use spikes exactly during the ambiguous maneuver, then relaxes](images/turning.png)
 
